@@ -1,1 +1,0 @@
-# jeetparmar.github.io
