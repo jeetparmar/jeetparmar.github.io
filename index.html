@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Webpage</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+            line-height: 1.6;
+        }
+        header {
+            background: url('https://media.licdn.com/dms/image/v2/D5616AQGizCkv4e60Rg/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1709406666515?e=1741219200&v=beta&t=_9YoI9GaGf55fRrtkGjXu7pnFy7k7pKouC6n51i21Ac') no-repeat center center/cover;
+            position: relative;
+            width: 100%;
+            padding-bottom: 25%;
+            border-top-left-radius: var(--corner-radius-medium);
+            border-top-right-radius: var(--corner-radius-medium);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            background: #21262d;
+            padding: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            color: #c9d1d9;
+        }
+        main {
+            padding: 2rem;
+            max-width: 900px;
+            margin: auto;
+            background: #161b22;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            border-bottom: 2px solid #58a6ff;
+            padding-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #21262d;
+            color: #58a6ff;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .profile-pic {
+            border-radius: 50%;
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 1rem 0;
+        }
+        ul li a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <br/>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://media.licdn.com/dms/image/v2/D5603AQFCx_9GN8cvLw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1665288085827?e=1741219200&v=beta&t=vqn8OD_gN1UVySdAqv0MWdvDEFCJDKiMgv2_1FXnjWE" alt="Your Profile Picture" class="profile-pic">
+            <ul>
+              <li>Hello! I'm Jeet Singh Parmar, a Full stack developer with 13+ years of experience in the IT industry as a Software Developer. I mainly focused on Product Development, Web application design, and programming implementation and enhancement.</li>
+              <li>Valued contributor who performs confidently and effectively under pressure and thrives on challenge.</li>
+              <li>Enthusiastic learner who quickly grasps concepts and technical skills.</li>
+            </ul>
+        </section>
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <p>Here are some of my recent works:</p>
+            <ul>
+                <li><a href="#">Project 1</a> - A brief description of your project.</li>
+                <li><a href="#">Project 2</a> - A brief description of another project.</li>
+                <li><a href="#">Project 3</a> - Yet another project description.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out to me via:</p>
+            <ul>
+                <li>Email: <a href="mailto:jeetparmar33@gmail.com">jeetparmar33@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/jeetsinghparmar/">linkedin.com/in/jeetsinghparmar</a></li>
+                <li>GitHub: <a href="https://github.com/jeetparmar">github.com/jeetparmar</a></li>
+            </ul>
+        </section>
+    </main>
+    <br/>
+    <footer>
+        <p>&copy; 2025 Jeet Singh Parmar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
