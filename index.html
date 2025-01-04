@@ -16,6 +16,11 @@
           toggle.addEventListener("click", () => {
               menu.classList.toggle("show");
           });
+          
+          // Set the first menu item as active on page load
+          if (menuLinks.length > 0) {
+             menuLinks[0].classList.add("active");
+          }
 
           accordions.forEach((accordion, index) => {
               const content = accordion.nextElementSibling;
@@ -56,6 +61,10 @@
                   });
                   // Scroll to the section
                   targetSection.scrollIntoView({ behavior: "smooth" });
+                  
+                  // Highlight the active link
+                  menuLinks.forEach(l => l.classList.remove("active"));
+                  link.classList.add("active");
 
                   // Open the corresponding accordion
                   accordionContents.forEach(c => (c.style.display = "none"));
@@ -114,6 +123,9 @@
         nav .menu {
             display: flex;
             gap: 2rem;
+        }
+        nav a.active {
+            color: #c9d1d9;
         }
         .menu-toggle {
             display: none;
