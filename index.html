@@ -6,35 +6,68 @@
     <title>Jeet Singh Parmar</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.querySelector(".menu-toggle");
-            const menu = document.querySelector(".menu");
+      document.addEventListener("DOMContentLoaded", function () {
+          const toggle = document.querySelector(".menu-toggle");
+          const menu = document.querySelector(".menu");
+          const accordions = document.querySelectorAll(".accordion");
+          const accordionContents = document.querySelectorAll(".accordion-content");
+          const menuLinks = document.querySelectorAll(".menu a");
 
-            toggle.addEventListener("click", () => {
-                menu.classList.toggle("show");
-            });
-            
-            const accordions = document.querySelectorAll(".accordion");
-            accordions.forEach((accordion, index) => {
-            	const content = accordion.nextElementSibling;
-                const icon = accordion.querySelector("i");
-            	if (index === 0) {
-                    content.style.display = "block";
-                    icon.className = "fas fa-chevron-up";
-                }
-                accordion.addEventListener("click", () => {
-                    const isActive = content.style.display === "block";
-                    document.querySelectorAll(".accordion-content").forEach(c => c.style.display = "none");
-                    document.querySelectorAll(".accordion i").forEach(i => i.className = "fas fa-chevron-down");
+          toggle.addEventListener("click", () => {
+              menu.classList.toggle("show");
+          });
 
-                    if (!isActive) {
-                        content.style.display = "block";
-                        icon.className = "fas fa-chevron-up";
-                    }
-                });
-            });
-        });
-    </script>
+          accordions.forEach((accordion, index) => {
+              const content = accordion.nextElementSibling;
+              const icon = accordion.querySelector("i");
+
+              // Open the first accordion by default
+              if (index === 0) {
+                  content.style.display = "block";
+                  icon.className = "fas fa-chevron-up";
+              }
+
+              accordion.addEventListener("click", () => {
+                  const isActive = content.style.display === "block";
+
+                  // Close all accordions
+                  accordionContents.forEach(c => (c.style.display = "none"));
+                  document.querySelectorAll(".accordion i").forEach(i => (i.className = "fas fa-chevron-down"));
+
+                  // Open the clicked accordion if it wasn't already open
+                  if (!isActive) {
+                      content.style.display = "block";
+                      icon.className = "fas fa-chevron-up";
+                  }
+              });
+          });
+
+          menuLinks.forEach((link, index) => {
+              link.addEventListener("click", (e) => {
+              	  if (menu.classList.contains("show")) {
+                     menu.classList.remove("show");
+                  }
+                  e.preventDefault(); // Prevent default link behavior
+                  const targetId = link.getAttribute("href").substring(1);
+                  const targetSection = document.getElementById(targetId);
+				  window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: "smooth"
+                  });
+                  // Scroll to the section
+                  targetSection.scrollIntoView({ behavior: "smooth" });
+
+                  // Open the corresponding accordion
+                  accordionContents.forEach(c => (c.style.display = "none"));
+                  accordions.forEach(a => (a.querySelector("i").className = "fas fa-chevron-down"));
+                  const accordionContent = accordions[index].nextElementSibling;
+                  accordionContent.style.display = "block";
+                  accordions[index].querySelector("i").className = "fas fa-chevron-up";
+              });
+          });
+      });
+  </script>
+
     <style>
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
@@ -244,6 +277,95 @@ and programming implementation and enhancement.</p>
             	<p>Worked as a Senior Full Stack Software Developer in <a href="https://www.neevtech.com/" target="_blank">Neev Information Technologies Private Limited</a> Bangalore from August 2011 to May 2014.</p>
         	</div>
         </section>
+        
+        <section id="projects">
+            <div class="accordion"><h2>Projects <i class="fas fa-chevron-down"></i></h2></div>
+            <div class="accordion-content">
+            	<p><b>11. Vurse Website</b> (Jan 2021 to till now)</p>
+                <ul>
+                    <li>Client - <b>Vurse Information Technology LLC</b></li>
+                    <li>Tech Stack - React JS, React Native, Redux, Material UI</li>
+                    <li>Description - It’s a website and mobile application that we are developing for the WhadaTime Short Video Platform.</li>
+                    <li>Roles & Responsibility - Creating Reusable Components, Containers, Web Pages, or Mobile Screens by using React JS, Redux, Redux Toolkit, React Native, and Material UI, deployed to the AWS cloud by using Amplify or S3 services.</li>
+                </ul>
+            
+            	<p><b>10. Vurse Backend and Dashboard APIs</b> (Aug 2021 to till now)</p>
+                <ul>
+                    <li>Client - <b>Vurse Information Technology LLC</b></li>
+                    <li>Tech Stack - Java11, Spring Boot, Microservices, AWS Cloud, MongoDB, Python, Node JS</li>
+                    <li>Description - It’s a backend api that we are developing for the Vurse Short Video Platform application.</li>
+                    <li>Roles & Responsibility - Creating Microservice by using Spring Boot and Spring Cloud for different modules, deployed these microservices Docker images to the AWS cloud by using ECR and ECS. Created an AWS lambda pipeline for Sony music using Python. Created Video transcoding pipeline using Node JS.</li>
+                </ul>
+            
+            	<p><b>9. Conga Contracts</b> (Feb 2021 to Oct 2021)</p>
+                <ul>
+                    <li>Client - <b>Conga (Apttus Software Pvt. Ltd)</b></li>
+                    <li>Tech Stack - Java 8, Spring MVC, GraphQL, ReactJS, Redux, Kendo Grid, Tomcat 8, PostgreSQL, Docker</li>
+                    <li>Description - Conga Contracts is a contract lifecycle management (CLM) tool that supports the entire lifecycle of a contract, from request to signature to review and renewal. It allows you to streamline contract processes, drive contract engagement, and gain visibility into contracts for insight, control, and lower risk.</li>
+                    <li>Roles & Responsibility - Developing Role-based restrictions for the conga contract profile UI, so for this writing end-to-end code using GraphQL, ReactJS, ExtJS, Spring MVC along with test coverage for both front end as well as back end.</li>
+                </ul>
+            
+            	<p><b>8. Banner Finance Self-Services</b> (Feb 2017 to Jan 2021)</p>
+                <ul>
+                    <li>Client - <b>Ellucian Higher Education Systems Pvt Ltd</b></li>
+                    <li>Tech Stack - Java 8, Spring Boot, Bootstrap, ReactJS, Redux, Tomcat 8, Oracle, Jenkins, Docker</li>
+                    <li>Description - The Self-Service finance system allows users to query budget information, submit requisitions and purchase orders to the common database, make budget transfers, and approve documents. So, to achieve such kinds of scenarios we developed microservices like My Finance Query, My Purchase Order, My Requisitions, My Journal Voucher, and many more.</li>
+                    <li>Roles & Responsibility - Developed the My Journal Voucher self-service application with the help of Spring Boot and followed the microservices architecture (CQRS, Circuit Breaker), created test cases, created a Job using Jenkins, and deployed it to the docker. For the front end developed end-to-end code using React and Redux. Fixed issues for others' self-service applications.</li>
+                </ul>
+            
+            	<p><b>7. Banner Finance</b> (Feb 2017 to Jan 2021)</p>
+                <ul>
+                    <li>Client - <b>Ellucian Higher Education Systems Pvt Ltd</b></li>
+                    <li>Tech Stack - Java 8, Spring MVC, JSP, Tomcat 8, Oracle, Docker</li>
+                    <li>Description - Banner Finance is a financial management system that enables users to track, maintain, and process all their relevant financial data. Banner finance allows a user to perform many activities that are related to the ledger, finance operations, stores inventory, purchasing and procurement, accounts payable, budgeting, fixed assets, cost accounting, and research accounting.</li>
+                    <li>Roles & Responsibility - Developed a lot of features related to filter, validation, and securing the data based on user access permission for the banner finance forms. Implement the procedure whenever there is a performance-related issue. Created an image and deployed it to docker and validated the code behavior.</li>
+                </ul>
+            
+            	<p><b>6. Smart Govern</b> (Nov 2014 to Jan 2017)</p>
+                <ul>
+                    <li>Client - <b>Microland Limited</b></li>
+                    <li>Tech Stack - Java 8, Spring Boot, Hibernate, Bootstrap, AngularJS, AWS SDK, Tomcat 8, and MySQL</li>
+                    <li>Description - Smart Govern is a product developed the monitor AWS-related activities like EC2, RDS, S3, EBS, CloudWatch, IAM, and many more.</li>
+                    <li>Roles & Responsibility - Set Up Spring Boot (AOP, Security, Batch, and Hibernate) project. Integrated the AWS SDK and developed the end-to-end code for the back end as well as the front end, created the Junit test cases which cover almost all the methods.</li>
+                </ul>
+            
+            	<p><b>5. Smart DevOps</b> (Nov 2014 to Jan 2017)</p>
+                <ul>
+                    <li>Client - <b>Microland Limited</b></li>
+                    <li>Tech Stack - Java 8, Groovy & Grails, Spring Boot, Hibernate, Bootstrap, jQuery, Tomcat 8, MySQL, GitHub, AWS, Jenkins.</li>
+                    <li>Description - Smart DevOps is a product that helps end-users to manage DevOps-related activities so what I mean is that we can monitor the entire DevOps process through this tool If end-users don’t have much understanding about the tech stack, then they can easily operate this product.</li>
+                    <li>Roles & Responsibility - Set Up Groovy & Grails configuration for Front End and Spring Boot (REST), Hibernate integration for Back End. and developed code which help to integrate cloud tools.</li>
+                </ul>
+            
+            	<p><b>4. Inventory Correction & Range Selection</b> (June 2014 to Nov 2014)</p>
+                <ul>
+                    <li>Client - <b>Decathlon</b></li>
+                    <li>Tech Stack - Java7, Play, JDBC, Google OAuth, Tomcat 7, PostgreSQL</li>
+                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the modules. Fixed the bugs in assigned modules.</li>
+                </ul>
+            
+            	<p><b>3. 9 Yards </b> (Oct 2012 to May 2014)</p>
+                <ul>
+                    <li>Client - <b>Peel Works</b></li>
+                    <li>Tech Stack - Java7, Groovy & Grails, Bootstrap, jQuery, Tomcat 7, MySQL</li>
+                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the Recruitment Garage modules. Fixed the bugs in assigned modules.</li>
+                </ul>
+            
+            	<p><b>2. AppDynamics </b> (Apr 2012 to Oct 2012)</p>
+                <ul>
+                    <li>Client - <a href="https://www.appdynamics.com/" target="_blank">AppDynamics</a></li>
+                    <li>Tech Stack - Java 7, JSP, Servlet, Spring, Struts, Hibernate, PostgreSQL, Oracle, MySQL, Tomcat.</li>
+                    <li>Roles & Responsibility - Coding (Created so many sample applications with the help of different technologies) and Perform Unit Testing.</li>
+                </ul>
+            
+            	<p><b>1. Mighty IFS </b> (Dec 2011 to Apr 2012)</p>
+                <ul>
+                    <li>Client - <a href="https://www.neevtech.com/client/case-study/mighty-auto-parts/" target="_blank">Mighty Auto Parts</a></li>
+                    <li>Tech Stack - Java 6, Spring MVC, Hibernate, jQuery, Tomcat 6, PostgreSQL</li>
+                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the modules. Fixed the bugs in assigned modules.</li>
+                </ul>
+        	</div>
+        </section>
         <section id="skills">
           <div class="accordion"><h2>Skills <i class="fas fa-chevron-down"></i></h2></div>
           <div class="accordion-content">
@@ -395,96 +517,6 @@ and programming implementation and enhancement.</p>
             </ul>
         	</div>
         </section>
-
-        <section id="projects">
-            <div class="accordion"><h2>Projects <i class="fas fa-chevron-down"></i></h2></div>
-            <div class="accordion-content">
-            	<p><b>11. Vurse Website</b> (Jan 2021 to till now)</p>
-                <ul>
-                    <li>Client - <b>Vurse Information Technology LLC</b></li>
-                    <li>Tech Stack - React JS, React Native, Redux, Material UI</li>
-                    <li>Description - It’s a website and mobile application that we are developing for the WhadaTime Short Video Platform.</li>
-                    <li>Roles & Responsibility - Creating Reusable Components, Containers, Web Pages, or Mobile Screens by using React JS, Redux, Redux Toolkit, React Native, and Material UI, deployed to the AWS cloud by using Amplify or S3 services.</li>
-                </ul>
-            
-            	<p><b>10. Vurse Backend and Dashboard APIs</b> (Aug 2021 to till now)</p>
-                <ul>
-                    <li>Client - <b>Vurse Information Technology LLC</b></li>
-                    <li>Tech Stack - Java11, Spring Boot, Microservices, AWS Cloud, MongoDB, Python, Node JS</li>
-                    <li>Description - It’s a backend api that we are developing for the Vurse Short Video Platform application.</li>
-                    <li>Roles & Responsibility - Creating Microservice by using Spring Boot and Spring Cloud for different modules, deployed these microservices Docker images to the AWS cloud by using ECR and ECS. Created an AWS lambda pipeline for Sony music using Python. Created Video transcoding pipeline using Node JS.</li>
-                </ul>
-            
-            	<p><b>9. Conga Contracts</b> (Feb 2021 to Oct 2021)</p>
-                <ul>
-                    <li>Client - <b>Conga (Apttus Software Pvt. Ltd)</b></li>
-                    <li>Tech Stack - Java 8, Spring MVC, GraphQL, ReactJS, Redux, Kendo Grid, Tomcat 8, PostgreSQL, Docker</li>
-                    <li>Description - Conga Contracts is a contract lifecycle management (CLM) tool that supports the entire lifecycle of a contract, from request to signature to review and renewal. It allows you to streamline contract processes, drive contract engagement, and gain visibility into contracts for insight, control, and lower risk.</li>
-                    <li>Roles & Responsibility - Developing Role-based restrictions for the conga contract profile UI, so for this writing end-to-end code using GraphQL, ReactJS, ExtJS, Spring MVC along with test coverage for both front end as well as back end.</li>
-                </ul>
-            
-            	<p><b>8. Banner Finance Self-Services</b> (Feb 2017 to Jan 2021)</p>
-                <ul>
-                    <li>Client - <b>Ellucian Higher Education Systems Pvt Ltd</b></li>
-                    <li>Tech Stack - Java 8, Spring Boot, Bootstrap, ReactJS, Redux, Tomcat 8, Oracle, Jenkins, Docker</li>
-                    <li>Description - The Self-Service finance system allows users to query budget information, submit requisitions and purchase orders to the common database, make budget transfers, and approve documents. So, to achieve such kinds of scenarios we developed microservices like My Finance Query, My Purchase Order, My Requisitions, My Journal Voucher, and many more.</li>
-                    <li>Roles & Responsibility - Developed the My Journal Voucher self-service application with the help of Spring Boot and followed the microservices architecture (CQRS, Circuit Breaker), created test cases, created a Job using Jenkins, and deployed it to the docker. For the front end developed end-to-end code using React and Redux. Fixed issues for others' self-service applications.</li>
-                </ul>
-            
-            	<p><b>7. Banner Finance</b> (Feb 2017 to Jan 2021)</p>
-                <ul>
-                    <li>Client - <b>Ellucian Higher Education Systems Pvt Ltd</b></li>
-                    <li>Tech Stack - Java 8, Spring MVC, JSP, Tomcat 8, Oracle, Docker</li>
-                    <li>Description - Banner Finance is a financial management system that enables users to track, maintain, and process all their relevant financial data. Banner finance allows a user to perform many activities that are related to the ledger, finance operations, stores inventory, purchasing and procurement, accounts payable, budgeting, fixed assets, cost accounting, and research accounting.</li>
-                    <li>Roles & Responsibility - Developed a lot of features related to filter, validation, and securing the data based on user access permission for the banner finance forms. Implement the procedure whenever there is a performance-related issue. Created an image and deployed it to docker and validated the code behavior.</li>
-                </ul>
-            
-            	<p><b>6. Smart Govern</b> (Nov 2014 to Jan 2017)</p>
-                <ul>
-                    <li>Client - <b>Microland Limited</b></li>
-                    <li>Tech Stack - Java 8, Spring Boot, Hibernate, Bootstrap, AngularJS, AWS SDK, Tomcat 8, and MySQL</li>
-                    <li>Description - Smart Govern is a product developed the monitor AWS-related activities like EC2, RDS, S3, EBS, CloudWatch, IAM, and many more.</li>
-                    <li>Roles & Responsibility - Set Up Spring Boot (AOP, Security, Batch, and Hibernate) project. Integrated the AWS SDK and developed the end-to-end code for the back end as well as the front end, created the Junit test cases which cover almost all the methods.</li>
-                </ul>
-            
-            	<p><b>5. Smart DevOps</b> (Nov 2014 to Jan 2017)</p>
-                <ul>
-                    <li>Client - <b>Microland Limited</b></li>
-                    <li>Tech Stack - Java 8, Groovy & Grails, Spring Boot, Hibernate, Bootstrap, jQuery, Tomcat 8, MySQL, GitHub, AWS, Jenkins.</li>
-                    <li>Description - Smart DevOps is a product that helps end-users to manage DevOps-related activities so what I mean is that we can monitor the entire DevOps process through this tool If end-users don’t have much understanding about the tech stack, then they can easily operate this product.</li>
-                    <li>Roles & Responsibility - Set Up Groovy & Grails configuration for Front End and Spring Boot (REST), Hibernate integration for Back End. and developed code which help to integrate cloud tools.</li>
-                </ul>
-            
-            	<p><b>4. Inventory Correction & Range Selection</b> (June 2014 to Nov 2014)</p>
-                <ul>
-                    <li>Client - <b>Decathlon</b></li>
-                    <li>Tech Stack - Java7, Play, JDBC, Google OAuth, Tomcat 7, PostgreSQL</li>
-                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the modules. Fixed the bugs in assigned modules.</li>
-                </ul>
-            
-            	<p><b>3. 9 Yards </b> (Oct 2012 to May 2014)</p>
-                <ul>
-                    <li>Client - <b>Peel Works</b></li>
-                    <li>Tech Stack - Java7, Groovy & Grails, Bootstrap, jQuery, Tomcat 7, MySQL</li>
-                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the Recruitment Garage modules. Fixed the bugs in assigned modules.</li>
-                </ul>
-            
-            	<p><b>2. AppDynamics </b> (Apr 2012 to Oct 2012)</p>
-                <ul>
-                    <li>Client - <a href="https://www.appdynamics.com/" target="_blank">AppDynamics</a></li>
-                    <li>Tech Stack - Java 7, JSP, Servlet, Spring, Struts, Hibernate, PostgreSQL, Oracle, MySQL, Tomcat.</li>
-                    <li>Roles & Responsibility - Coding (Created so many sample applications with the help of different technologies) and Perform Unit Testing.</li>
-                </ul>
-            
-            	<p><b>1. Mighty IFS </b> (Dec 2011 to Apr 2012)</p>
-                <ul>
-                    <li>Client - <a href="https://www.neevtech.com/client/case-study/mighty-auto-parts/" target="_blank">Mighty Auto Parts</a></li>
-                    <li>Tech Stack - Java 6, Spring MVC, Hibernate, jQuery, Tomcat 6, PostgreSQL</li>
-                    <li>Roles & Responsibility - Developed controller classes, service classes, data models, and user interfaces as per the requirements in the modules. Fixed the bugs in assigned modules.</li>
-                </ul>
-        	</div>
-        </section>
-        
         <section id="education">
             <div class="accordion"><h2>Education <i class="fas fa-chevron-down"></i></h2></div>
             <div class="accordion-content">
