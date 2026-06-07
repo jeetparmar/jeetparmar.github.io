@@ -1,831 +1,664 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jeet Singh Parmar - Full Stack Technical Lead</title>
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeet Singh Parmar — Principal Full Stack & AI Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-  <body>
-    <div class="animated-bg">
-      <div class="bg-circle"></div>
-      <div class="bg-circle"></div>
-      <div class="bg-circle"></div>
+<!-- Atmosphere -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+
+<!-- Navigation -->
+<nav role="navigation" aria-label="Main navigation">
+  <div class="nav-brand" data-text="JSP">JSP</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="mailto:jeetparmar33@gmail.com">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<main>
+<section id="hero" aria-label="Introduction">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-label">Available for Senior Roles</div>
+      <h1>
+        Jeet Singh <em>Parmar</em>
+      </h1>
+      <p class="hero-desc">
+        Principal Full Stack &amp; AI Engineering Leader with 14+ years building
+        high-performance cloud-native systems. Specialized in microservices,
+        distributed architectures, and production AI — across fintech, education,
+        and media at scale.
+      </p>
+      <div class="hero-cta">
+        <a href="mailto:jeetparmar33@gmail.com" class="btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Get In Touch
+        </a>
+        <a href="https://linkedin.com/in/jeetsinghparmar" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/jeetparmar" target="_blank" rel="noopener" class="btn-ghost">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
     </div>
 
-    <header>
-      <div class="profile-container">
-        <img
-          src="https://avatars.githubusercontent.com/u/4319980?s=400&u=b710a705fb9563877234c66aab203302f0d14961&v=4"
-          alt="Jeet Singh Parmar"
-          class="profile-pic"
-        />
-        <div class="profile-info">
-          <h1>Jeet Singh Parmar</h1>
-          <p class="title">Full Stack Technical Lead</p>
-          <div class="social-links">
-            <a
-              href="https://www.linkedin.com/in/jeetsinghparmar/"
-              target="_blank"
-              title="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              href="https://github.com/jeetparmar"
-              target="_blank"
-              title="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a href="mailto:jeetparmar33@gmail.com" title="Email"
-              ><i class="fas fa-envelope"></i
-            ></a>
-            <a href="tel:+971504895503" title="Phone"
-              ><i class="fas fa-phone"></i
-            ></a>
+    <div class="hero-card" role="complementary" aria-label="Career highlights">
+      <div style="display:flex; align-items:center; gap:16px; margin-bottom:28px;">
+        <div style="position:relative; flex-shrink:0;">
+          <div style="width:72px; height:72px; border-radius:50%; background:linear-gradient(135deg,var(--gold),var(--teal)); padding:2px;">
+            <img
+              src="https://avatars.githubusercontent.com/u/4319980?s=400&u=b710a705fb9563877234c66aab203302f0d14961&v=4"
+              alt="Jeet Singh Parmar"
+              width="68" height="68"
+              style="width:68px;height:68px;border-radius:50%;object-fit:cover;display:block;border:2px solid var(--bg);"
+              loading="eager"
+            >
           </div>
+          <div style="position:absolute;bottom:2px;right:2px;width:14px;height:14px;background:#22c55e;border-radius:50%;border:2px solid var(--surface);" aria-label="Available for work"></div>
+        </div>
+        <div>
+          <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;line-height:1.2;">Jeet Singh Parmar</div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.12em;color:var(--teal);text-transform:uppercase;margin-top:4px;">Technical Lead · AI Engineer</div>
+          <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--text-dim);margin-top:3px;">Bangalore, India</div>
         </div>
       </div>
-    </header>
-
-    <nav>
-      <div class="menu">
-        <a href="#summary" class="active">Summary</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <div class="years-badge">
+        <div class="years-number">14+</div>
+        <div class="years-label">Years Engineering</div>
       </div>
-      <div class="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">8+</div>
+          <div class="stat-desc">Companies</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">AI</div>
+          <div class="stat-desc">Lead Expert</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Full</div>
+          <div class="stat-desc">Stack Depth</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">MCA</div>
+          <div class="stat-desc">RGPV Indore</div>
+        </div>
       </div>
-    </nav>
+      <hr class="hero-divider">
+      <div class="hero-contact">
+        <a href="mailto:jeetparmar33@gmail.com" aria-label="Email Jeet">
+          <span class="contact-icon" aria-hidden="true">✉</span> jeetparmar33@gmail.com
+        </a>
+        <a href="tel:+919743684553" aria-label="Call Jeet">
+          <span class="contact-icon" aria-hidden="true">✆</span> +91-9743684553
+        </a>
+        <a href="https://jeetparmar.github.io/" target="_blank" rel="noopener" aria-label="Jeet's website">
+          <span class="contact-icon" aria-hidden="true">◈</span> jeetparmar.github.io
+        </a>
+        <a href="https://www.youtube.com/@AlmightyJava" target="_blank" rel="noopener" aria-label="Jeet's YouTube channel">
+          <span class="contact-icon" aria-hidden="true">▶</span> @AlmightyJava
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <main>
-      <section id="summary">
-        <h2><i class="fas fa-user"></i> Summary</h2>
-        <p>Hello! I'm <b>Jeet Singh Parmar</b></p>
-        <p>
-          Full Stack Technical Lead with 14+ years of experience building
-          scalable web and cloud-native applications. Specialized in
-          microservices, frontend architecture, and DevOps with a proven track
-          record in leading end-to-end project lifecycles from conception to
-          deployment across fintech, education, and media domains.
+<!-- Skills -->
+<section id="skills" aria-labelledby="skills-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">01</span>
+      <h2 id="skills-heading">Technical Arsenal</h2>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+        </div>
+        <div class="skill-group-title">AI & LLM Engineering</div>
+        <div class="skill-tags">
+          <span class="skill-tag">RAG</span>
+          <span class="skill-tag">LangChain</span>
+          <span class="skill-tag">LangGraph</span>
+          <span class="skill-tag">LlamaIndex</span>
+          <span class="skill-tag">Multi-Agent</span>
+          <span class="skill-tag">GPT-4o</span>
+          <span class="skill-tag">LLaMA 3</span>
+          <span class="skill-tag">LoRA Fine-Tuning</span>
+          <span class="skill-tag">FAISS</span>
+          <span class="skill-tag">ChromaDB</span>
+          <span class="skill-tag">Prompt Engineering</span>
+          <span class="skill-tag">LangSmith</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="skill-group-title">Backend Engineering</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Java 8–21</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Go</span>
+          <span class="skill-tag">Spring Boot</span>
+          <span class="skill-tag">FastAPI</span>
+          <span class="skill-tag">NestJS</span>
+          <span class="skill-tag">GraphQL</span>
+          <span class="skill-tag">REST</span>
+          <span class="skill-tag">JWT / OAuth2</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-2">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div class="skill-group-title">Frontend Engineering</div>
+        <div class="skill-tags">
+          <span class="skill-tag">React.js</span>
+          <span class="skill-tag">Next.js</span>
+          <span class="skill-tag">React Native</span>
+          <span class="skill-tag">Redux Toolkit</span>
+          <span class="skill-tag">TypeScript</span>
+          <span class="skill-tag">Tailwind CSS</span>
+          <span class="skill-tag">Angular</span>
+          <span class="skill-tag">Material UI</span>
+          <span class="skill-tag">Streamlit</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-3">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        </div>
+        <div class="skill-group-title">Machine Learning</div>
+        <div class="skill-tags">
+          <span class="skill-tag">PyTorch</span>
+          <span class="skill-tag">TensorFlow</span>
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">XGBoost</span>
+          <span class="skill-tag">Pandas</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">NLP Pipelines</span>
+          <span class="skill-tag">Sentiment Analysis</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div class="skill-group-title">Cloud & DevOps</div>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS ECS/ECR/Lambda</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">Kubernetes</span>
+          <span class="skill-tag">CI/CD</span>
+          <span class="skill-tag">Jenkins</span>
+          <span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">Azure</span>
+          <span class="skill-tag">Firebase</span>
+        </div>
+      </div>
+      <div class="skill-group reveal reveal-delay-1">
+        <div class="skill-group-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a96e" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <div class="skill-group-title">Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">Oracle</span>
+          <span class="skill-tag">Redis</span>
+          <span class="skill-tag">FAISS</span>
+          <span class="skill-tag">ChromaDB</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience" aria-labelledby="experience-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">02</span>
+      <h2 id="experience-heading">Career Journey</h2>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-meta">Feb 2023 — Dec 2025 · Dubai, UAE</div>
+        <div class="timeline-company">Vurse</div>
+        <div class="timeline-role">Full Stack Technical Lead</div>
+        <p class="timeline-desc">
+          Led architecture and full-stack development of an AI-powered social media and crypto intelligence platform. Built production-grade RAG pipelines, multi-agent LLM workflows with LangChain/LangGraph, real-time microservices on AWS, and cross-platform web/mobile applications supporting short-video content, moderation, and analytics at scale.
         </p>
-      </section>
+      </div>
 
-      <section id="experience">
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="experience-item">
-          <p>
-            <strong>Full Stack Technical Lead</strong> at
-            <a href="https://www.vurse.com/" target="_blank">Vurse LLC</a>
-          </p>
-          <p>Feb 2023 - Dec 2025</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Technical Lead</strong> at
-            <a href="https://www.encora.com/" target="_blank"
-              >Encora Innovation Labs</a
-            >
-          </p>
-          <p>Oct 2021 - Feb 2023</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Senior Full Stack Software Developer</strong> at
-            <a href="https://conga.com/" target="_blank">Conga</a>
-          </p>
-          <p>Jan 2021 - Oct 2021</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Senior Full Stack Software Developer</strong> at
-            <a href="https://www.ellucian.com/" target="_blank">Ellucian</a>
-          </p>
-          <p>Feb 2017 - Jan 2021</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Senior Full Stack Software Developer</strong> at
-            <a href="https://www.microland.com/" target="_blank"
-              >Microland Limited</a
-            >
-          </p>
-          <p>Nov 2014 - Jan 2017</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Senior Full Stack Software Developer</strong> at
-            <a href="https://www.nousinfosystems.com" target="_blank"
-              >Nous Infosystems</a
-            >
-          </p>
-          <p>May 2014 - Nov 2014</p>
-        </div>
-        <div class="experience-item">
-          <p>
-            <strong>Senior Full Stack Software Developer</strong> at
-            <a href="https://www.neevtech.com/" target="_blank"
-              >Neev Information Technologies</a
-            >
-          </p>
-          <p>Aug 2011 - May 2014</p>
-        </div>
-      </section>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-meta">Oct 2021 — Feb 2023 · Bangalore, India</div>
+        <div class="timeline-company">Encora Innovation Labs</div>
+        <div class="timeline-role">Technical Lead</div>
+        <p class="timeline-desc">
+          Led development of supply chain and Track &amp; Trace systems for Deutsche Post DHL Group. Designed scalable microservices with Spring Boot, implemented GraphQL APIs, and built real-time order tracking with map and timeline views.
+        </p>
+      </div>
 
-      <section id="projects">
-        <h2><i class="fas fa-code"></i> Featured Projects</h2>
-        <div class="project">
-          <h3>Vurse - Crypto AI Agent</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2025 – 12/2025</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Python, FastAPI, MongoDB, RAG, LangChain, LangGraph, BERT,
-                RoBERTa, GPT/LLaMA, Transformers, PyTorch
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Crypto AI Agent capable of answering prompt-based questions and
-                performing market predictions using real-time news and posts
-                aggregated from multiple sources such as CoinMarketCap and
-                CoinGecko. The agent incorporates sentiment analysis, technical
-                indicators, and trading signals to provide comprehensive
-                insights and actionable intelligence for crypto-related
-                decisions.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed scalable APIs using FastAPI with Swagger
-                documentation.<br />
-                2. Integrated and deployed pre-trained and fine-tuned LLMs (GPT,
-                LLaMA, BERT, RoBERTa) for crypto market insights.<br />
-                3. Implemented RAG pipelines with LangChain and LangGraph for
-                real-time contextual analysis.<br />
-                4. Aggregated and normalized crypto data from CoinGecko and
-                CoinMarketCap APIs.<br />
-                5. Built sentiment analysis and trading signal APIs leveraging
-                transformers and technical indicators.<br />
-                6. Managed data storage and retrieval with MongoDB for user
-                queries and market data.
-              </p>
-            </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-meta">Jan 2021 — Oct 2021 · Bengaluru, India</div>
+        <div class="timeline-company">Conga Corporation</div>
+        <div class="timeline-role">Senior Full Stack Developer</div>
+        <p class="timeline-desc">
+          Built Contract Lifecycle Management platform features including RBAC, GraphQL APIs, and enhanced React/Redux frontend workflows for enterprise contract operations.
+        </p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-meta">Feb 2017 — Jan 2021 · Bengaluru, India</div>
+        <div class="timeline-company">Ellucian</div>
+        <div class="timeline-role">Senior Full Stack Developer</div>
+        <p class="timeline-desc">
+          Led design of Journal Voucher microservice using CQRS and circuit breaker patterns for Banner Finance. Engineered high-volume financial workflows for budgets, requisitions, and reporting in higher-education ERP.
+        </p>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-meta">Nov 2014 — Jan 2017 · Bengaluru, India</div>
+        <div class="timeline-company">Microland Limited</div>
+        <div class="timeline-role">Senior Full Stack Developer</div>
+        <p class="timeline-desc">
+          Architected Smart Govern and Smart DevOps platforms — AWS monitoring/governance dashboards with real-time cloud resource auditing, AOP-based Spring Boot services, and automated CI/CD pipeline tooling.
+        </p>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-meta">May 2014 — Nov 2014 · Bengaluru, India</div>
+        <div class="timeline-company">Nous Infosystems</div>
+        <div class="timeline-role">Senior Full Stack Developer</div>
+        <p class="timeline-desc">
+          Developed backend modules for a high-availability enterprise inventory correction and range selection system using Play Framework and JDBC. Integrated Google OAuth for enterprise SSO and optimised performance across critical inventory modules.
+        </p>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-meta">Aug 2011 — May 2014 · Bangalore, India</div>
+        <div class="timeline-company">NeevTech</div>
+        <div class="timeline-role">Senior Full Stack Developer</div>
+        <p class="timeline-desc">
+          Built enterprise products including AppDynamics prototypes and Peel Works recruitment platform using Groovy &amp; Grails, Spring, and Hibernate with multi-database persistence.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" aria-labelledby="projects-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">03</span>
+      <h2 id="projects-heading">Featured Work</h2>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card featured reveal">
+        <div class="featured-badge">Flagship AI Project</div>
+        <div class="project-year">2025</div>
+        <div class="project-title">AI-Powered Crypto Intelligence &amp; Trading Insights</div>
+        <p class="project-desc">
+          Production-grade crypto intelligence platform delivering real-time market analysis, sentiment insights, risk assessments, and AI-generated trading signals. Integrated multi-agent LangGraph workflows, LoRA fine-tuned NLP models, RAG pipelines with vector search, and AI guardrails for hallucination detection and PII masking.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">FastAPI</span>
+          <span class="tech-badge">LangChain</span>
+          <span class="tech-badge">LangGraph</span>
+          <span class="tech-badge">RAG</span>
+          <span class="tech-badge">GPT-4o</span>
+          <span class="tech-badge">LLaMA 3</span>
+          <span class="tech-badge">LoRA</span>
+          <span class="tech-badge">Next.js</span>
+          <span class="tech-badge">MongoDB</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-year">2024 — 2025</div>
+        <div class="project-title">Enterprise Multimodal AI Knowledge Assistant</div>
+        <p class="project-desc">
+          Agentic RAG platform processing PDFs, audio, video, and web content through a unified conversational interface. Built on LangGraph with specialized agents for retrieval, planning, reasoning, and citation generation.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">LangGraph</span>
+          <span class="tech-badge">AWS Bedrock</span>
+          <span class="tech-badge">FAISS</span>
+          <span class="tech-badge">ChromaDB</span>
+          <span class="tech-badge">RabbitMQ</span>
+          <span class="tech-badge">Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-year">2023 — 2025</div>
+        <div class="project-title">Vurse Backend Microservices Platform</div>
+        <p class="project-desc">
+          Distributed microservices architecture using Spring Boot + AWS for media ingestion, content moderation, personalization, and delivery. Implemented Saga, Circuit Breaker, and API Gateway patterns with event-driven async processing.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 21</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">AWS ECS</span>
+          <span class="tech-badge">MongoDB</span>
+          <span class="tech-badge">Docker</span>
+          <span class="tech-badge">Lambda</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-year">2021 — 2023</div>
+        <div class="project-title">DHL Supply Chain &amp; Track &amp; Trace</div>
+        <p class="project-desc">
+          End-to-end supply chain system for Deutsche Post DHL with real-time order tracking, GraphQL APIs, and customizable logistics workflows supporting consumer and supplier visibility.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 17</span>
+          <span class="tech-badge">GraphQL</span>
+          <span class="tech-badge">ReactJS</span>
+          <span class="tech-badge">Oracle</span>
+          <span class="tech-badge">Docker</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-year">2017 — 2021</div>
+        <div class="project-title">Ellucian Banner Finance</div>
+        <p class="project-desc">
+          Core financial ERP system and self-service platform for higher education institutions. Designed Journal Voucher microservice with CQRS patterns serving high-volume budget and approval workflows.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 8</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">CQRS</span>
+          <span class="tech-badge">Oracle</span>
+          <span class="tech-badge">ReactJS</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-year">2023 — 2025</div>
+        <div class="project-title">Vurse Web &amp; Mobile Platform</div>
+        <p class="project-desc">
+          Cross-platform web and mobile applications for short-video content, moderation workflows, and analytics dashboards. Architected a modular frontend ecosystem with shared components, real-time admin dashboards, and scalable CI/CD via AWS Amplify and S3.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">React.js</span>
+          <span class="tech-badge">React Native</span>
+          <span class="tech-badge">Redux Toolkit</span>
+          <span class="tech-badge">TypeScript</span>
+          <span class="tech-badge">Material UI</span>
+          <span class="tech-badge">AWS Amplify</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-year">2021 — 2021</div>
+        <div class="project-title">Conga — Contract Lifecycle Management</div>
+        <p class="project-desc">
+          Enterprise CLM platform with role-based access control enforcing granular contract workflow permissions. Integrated GraphQL APIs with Spring backend, enhanced ReactJS/Redux frontend state management, and built full unit and integration test suites.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 11</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">GraphQL</span>
+          <span class="tech-badge">RabbitMQ</span>
+          <span class="tech-badge">ReactJS</span>
+          <span class="tech-badge">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-year">2014 — 2017</div>
+        <div class="project-title">Microland — Smart Govern</div>
+        <p class="project-desc">
+          AWS monitoring and governance platform for enterprise cloud resources. Architected modular Spring Boot services with AOP, Security, and Batch modules for secure scheduled monitoring. Built AngularJS dashboards for real-time operational visibility and integrated AWS SDK for full resource auditing.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 8</span>
+          <span class="tech-badge">Spring Boot AOP</span>
+          <span class="tech-badge">AWS SDK</span>
+          <span class="tech-badge">Hibernate</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">AngularJS</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-year">2014 — 2017</div>
+        <div class="project-title">Microland — Smart DevOps Platform</div>
+        <p class="project-desc">
+          Enterprise DevOps automation platform integrating AWS and Jenkins for deployment automation, monitoring, and build orchestration. Built responsive dashboards using Groovy &amp; Grails with Bootstrap/jQuery, reducing manual interventions through scalable pipeline tooling.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 8</span>
+          <span class="tech-badge">Groovy &amp; Grails</span>
+          <span class="tech-badge">Spring Boot</span>
+          <span class="tech-badge">AWS</span>
+          <span class="tech-badge">Jenkins</span>
+          <span class="tech-badge">MySQL</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-year">2014</div>
+        <div class="project-title">Nous Infosystems — Inventory Correction &amp; Range Selection</div>
+        <p class="project-desc">
+          High-availability enterprise inventory management system using Play Framework and JDBC. Integrated Google OAuth for enterprise SSO, optimised performance across critical modules, and collaborated with cross-functional teams for smooth delivery.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 7</span>
+          <span class="tech-badge">Play Framework</span>
+          <span class="tech-badge">JDBC</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Google OAuth</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="project-year">2012 — 2014</div>
+        <div class="project-title">NeevTech — Peel Works 9 Yards</div>
+        <p class="project-desc">
+          Recruitment workflow platform built with Groovy &amp; Grails. Designed and implemented scalable backend services, controllers, and data models for end-to-end hiring modules, with responsive frontend components improving UX and operational efficiency.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 7</span>
+          <span class="tech-badge">Groovy &amp; Grails</span>
+          <span class="tech-badge">MySQL</span>
+          <span class="tech-badge">Bootstrap</span>
+          <span class="tech-badge">jQuery</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2">
+        <div class="project-year">2012</div>
+        <div class="project-title">NeevTech — AppDynamics</div>
+        <p class="project-desc">
+          Enterprise prototype applications implementing architecture best practices and system design patterns. Built and optimised Hibernate-based data persistence layers across PostgreSQL, Oracle, and MySQL for reliable cross-database operations in an APM tooling context.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 7</span>
+          <span class="tech-badge">Spring</span>
+          <span class="tech-badge">Struts</span>
+          <span class="tech-badge">Hibernate</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">Oracle</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal">
+        <div class="project-year">2011 — 2012</div>
+        <div class="project-title">NeevTech — Mighty IFS</div>
+        <p class="project-desc">
+          Core finance and HR modules built with Spring MVC and Hibernate. Developed backend controllers, services, and data models, built interactive frontend components, and optimised system performance to deliver stable, maintainable enterprise modules.
+        </p>
+        <div class="project-tech">
+          <span class="tech-badge">Java 6</span>
+          <span class="tech-badge">Spring MVC</span>
+          <span class="tech-badge">Hibernate</span>
+          <span class="tech-badge">PostgreSQL</span>
+          <span class="tech-badge">jQuery</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Personal Projects -->
+    <div style="margin-top: 48px;">
+      <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:20px; color:var(--text-muted);">Personal Projects</h3>
+      <div class="personal-grid">
+        <div class="personal-card reveal">
+          <div class="project-year">2026 — Present</div>
+          <div class="project-title" style="font-size:17px; margin-bottom:10px;">True Spark</div>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.7; margin-bottom:14px;">AI-powered social content platform with OpenAI &amp; Gemini API integration. Full-stack: FastAPI backend, MongoDB, async pipelines for real-time content generation and scalable data handling.</p>
+          <div class="project-tech">
+            <span class="tech-badge">React Native</span>
+            <span class="tech-badge">Expo</span>
+            <span class="tech-badge">TypeScript</span>
+            <span class="tech-badge">Redux Toolkit</span>
+            <span class="tech-badge">FastAPI</span>
+            <span class="tech-badge">MongoDB</span>
+            <span class="tech-badge">OpenAI API</span>
+            <span class="tech-badge">Gemini API</span>
+            <span class="tech-badge">Docker</span>
           </div>
         </div>
-        <div class="project">
-          <h3>Vurse - Crypto Backend APIs and Website</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2025 – 12/2025</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Python, FastAPI, Swagger, MongoDB, OpenAI, CoinMarketCap,
-                Twitter, YouTube APIs, Next.js, React, Redux Toolkit,
-                TypeScript, Tailwind CSS.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Crypto Intelligence Dashboard aggregating real-time market and
-                social data. Used AI sentiment analysis for actionable insights
-                and trend predictions.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Building scalable APIs with FastAPI and Swagger.<br />
-                2. Integrated OpenAI for sentiment analysis on social data.<br />
-                3. Designed responsive UIs using React and Tailwind CSS.<br />
-                4. Implemented micro-frontend architecture.<br />
-                5. Created data pipelines to normalize and store data in
-                MongoDB.<br />
-                6. Delivered end-to-end features focusing on performance and
-                scalability.
-              </p>
-            </div>
+        <div class="personal-card reveal reveal-delay-1">
+          <div class="project-year">2026 — Present</div>
+          <div class="project-title" style="font-size:17px; margin-bottom:10px;">Thinker Joy ✨</div>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.7; margin-bottom:14px;">Making learning fun, one word at a time — an AI-assisted educational vocabulary and learning platform for engaging daily skill-building.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Mobile</span>
+            <span class="tech-badge">EdTech</span>
+            <span class="tech-badge">AI-Assisted</span>
           </div>
         </div>
-        <div class="project">
-          <h3>
-            Vurse - Multimodal Intelligent Question-Answering Agent (RAG-based)
-          </h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>12/2024 – 02/2025</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Python, Streamlit, LangChain, FAISS, OpenAI, Transformers,
-                PyTorch, MongoDB, pytesseract, PyPDF2, pydub, moviepy,
-                SpeechRecognition, scikit-learn
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Built an AI-powered agent capable of answering user queries from
-                multiple content types including PDFs, text, images, audio,
-                video, and websites. Utilized RAG architecture with LangChain,
-                FAISS, and pre-trained LLMs to deliver context-aware responses.
-                Integrated LangChain with OpenAI LLMs to generate responses from
-                context. Developed an interactive Streamlit UI for chat and file
-                uploads. Stored session history and Q&A logs in MongoDB. Managed
-                environment configuration securely using python-dotenv.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Processed multimodal data using PyPDF2, pytesseract,
-                SpeechRecognition, and moviepy.<br />
-                2. Embedded and indexed content using OpenAI embeddings and
-                FAISS for vector search.<br />
-                3. Integrated LangChain with OpenAI LLMs to generate responses
-                from context.<br />
-                4. Developed an interactive Streamlit UI for chat and file
-                uploads.<br />
-                5. Stored session history and Q&A logs in MongoDB.<br />
-                6. Managed environment configuration securely using
-                python-dotenv.
-              </p>
-            </div>
+        <div class="personal-card reveal reveal-delay-2">
+          <div class="project-year">Jan — Feb 2026</div>
+          <div class="project-title" style="font-size:17px; margin-bottom:10px;">Bhakti Amrit</div>
+          <p style="font-size:13px; color:var(--text-muted); line-height:1.7; margin-bottom:14px;">Complete daily sadhana companion — a spiritual wellness and devotional practice tracker for guided meditation, chanting, and ritual routines.</p>
+          <div class="project-tech">
+            <span class="tech-badge">Mobile</span>
+            <span class="tech-badge">Wellness</span>
+            <span class="tech-badge">Spiritual Tech</span>
           </div>
         </div>
-        <div class="project">
-          <h3>Vurse - Website & Dashboard</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2023 – 01/2025</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                React.js, React Native, Redux Toolkit, TypeScript, Material UI.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Web and mobile platform for Vurse supporting short video
-                uploads, viewing, moderation, and an admin dashboard for
-                real-time content management and analytics.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Created reusable UI components with React, Redux Toolkit, and
-                TypeScript.<br />
-                2. Led UI/UX design focusing on usability and accessibility.<br />
-                3. Integrated Material UI for a responsive, polished design.<br />
-                4. Managed deployment via AWS Amplify and S3 for fast, reliable
-                delivery.<br />
-                5. Collaborated with backend teams to ensure smooth API
-                integration.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Vurse - Backend APIs</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2023 – 02/2025</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 11, Spring Boot, Microservices, AWS (ECS, ECR, Lambda, S3),
-                MongoDB, Python, Node.js.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Backend infrastructure for a short video platform supporting
-                uploads, moderation, analytics, and dynamic user progression.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed Spring Boot microservices with Eureka, Config
-                Server, and API Gateway.<br />
-                2. Deployed containerized apps on AWS ECS and ECR for
-                scalability.<br />
-                3. Designed MongoDB schemas for metadata and activity
-                tracking.<br />
-                4. Automated workflows via AWS Lambda for ingestion and
-                filtering.<br />
-                5. Created Node.js video transcoding and content detection
-                services.<br />
-                6. Built a recommendation engine for personalized content
-                delivery.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>My Supply Chain & Track & Trace</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Client</strong>
-              <p>Deutsche Post DHL Group</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>10/2021 – 02/2023</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 11, Spring Boot, Microservices, GraphQL, ReactJS, Redux,
-                HandlebarsJS, Oracle, Docker, Jenkins
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                My Supply Chain is a web application that enables delivery
-                companies to configure and manage their end-to-end logistics
-                processes. Track & Trace is a platform that allows consumers and
-                suppliers to monitor orders through real-time map and timeline
-                views, ensuring full visibility across the supply chain.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Designed and developed microservices-based backend systems
-                using Spring Boot.<br />
-                2. Built responsive frontend applications using ReactJS, Redux,
-                and HandlebarsJS.<br />
-                3. Implemented GraphQL APIs for efficient and flexible data
-                retrieval.<br />
-                4. Developed real-time Track & Trace features with map and
-                timeline tracking.<br />
-                5. Integrated Oracle database for reliable data management and
-                performance optimization.<br />
-                6. Containerized applications using Docker and supported CI/CD
-                pipelines via Jenkins.<br />
-                7. Worked in Agile environment using JIRA to deliver features
-                based on business requirements.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Conga - CLM (Contracts Lifecycle Management)</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2021 – 10/2021</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 8, Spring MVC, GraphQL, ReactJS, Redux, ExtJS, Tomcat 8,
-                PostgreSQL, Docker.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Conga Contracts, a Contract Lifecycle Management platform
-                improving contract governance, compliance, and risk reduction.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Implemented RBAC with GraphQL, ReactJS, and ExtJS for secure
-                user permissions.<br />
-                2. Integrated Spring Boot backend via GraphQL for dynamic data
-                access.<br />
-                3. Developed unit and integration tests to ensure stability.<br />
-                4. Supported Dockerized deployments and CI/CD to streamline
-                releases.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Ellucian - Banner Finance Self-Services</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2017 – 01/2021</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 8, Spring Boot, ReactJS, Redux, Bootstrap, Oracle, Tomcat
-                8, Jenkins, Docker.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Self-Service Finance System supporting budget queries, purchase
-                orders, requisitions, transfers, and approvals.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Led My Journal Voucher microservice using Spring Boot with
-                CQRS and circuit breaker patterns for scalability.<br />
-                2. Created responsive UIs with ReactJS, Redux, and Bootstrap.<br />
-                3. Integrated Oracle backend and managed CI/CD with Jenkins and
-                Docker.<br />
-                4. Contributed to issue resolution and feature updates across
-                finance modules.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Ellucian - Banner Finance</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>02/2017 – 01/2021</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>Java 8, Spring MVC, Morphis, JSP, Oracle, Tomcat 8, Docker.</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Banner Finance, an enterprise financial management system
-                handling ledger, procurement, accounts payable, and budgeting.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Improved data filtering, input validation, and form security
-                to ensure data integrity and compliance.<br />
-                2. Resolved performance bottlenecks, enhancing workflow
-                responsiveness.<br />
-                3. Containerized deployments with Docker to streamline delivery
-                and maintain environment consistency.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Microland - Smart Govern</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>11/2014 – 01/2017</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 8, Spring Boot (AOP, Security, Batch), Hibernate,
-                AngularJS, Bootstrap, AWS SDK, Tomcat 8, MySQL.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Smart Govern, an AWS monitoring platform for centralized
-                tracking and auditing of AWS resources.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed a modular Spring Boot app using AOP, Security, and
-                Batch for secure, scheduled processing.<br />
-                2. Integrated AWS SDK for real-time resource tracking.<br />
-                3. Built backend services and AngularJS frontend for seamless
-                UX.<br />
-                4. Created extensive JUnit tests for code quality and
-                maintainability.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Microland - Smart DevOps</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>11/2014 – 01/2017</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 8, Groovy & Grails, Spring Boot (REST), Hibernate,
-                Bootstrap, jQuery, Tomcat 8, MySQL, GitHub, AWS, Jenkins.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Description</strong>
-              <p>
-                Smart DevOps, a platform simplifying DevOps workflows for
-                non-technical users.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Customized Groovy & Grails frontend with Bootstrap and jQuery
-                for responsive UIs.<br />
-                2. Developed RESTful backend services using Spring Boot and
-                Hibernate.<br />
-                3. Integrated AWS and Jenkins for automated deployments and
-                monitoring.<br />
-                4. Ensured modularity, scalability, and maintainability through
-                team collaboration.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Nous Infosystems - Inventory Correction & Range Selection</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>06/2014 – 11/2014</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 7, Play Framework, JDBC, Google OAuth, Tomcat 7,
-                PostgreSQL.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed backend components (controllers, services, data
-                models) using Play Framework and JDBC.<br />
-                2. Implemented UI features and integrated Google OAuth for
-                secure user authentication.<br />
-                3. Participated in bug fixes and performance tuning to enhance
-                stability.<br />
-                4. Collaborated closely with the team for module integration and
-                agile feature delivery.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Neev Tech - Peel Works 9 Yards</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>10/2012 – 05/2014</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 7, Groovy & Grails, Bootstrap, jQuery, Tomcat 7, MySQL.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed backend controllers, services, and data models for
-                Recruitment Garage modules using Groovy & Grails.<br />
-                2. Created responsive UI elements with Bootstrap and jQuery to
-                improve user experience.<br />
-                3. Resolved bugs and implemented fixes to enhance system
-                stability.<br />
-                4. Worked closely with cross-functional teams to ensure smooth
-                module integration and delivery.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Neev Tech - AppDynamics</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>04/2012 – 10/2012</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 7, JSP, Servlet, Spring, Struts, Hibernate, PostgreSQL,
-                Oracle, MySQL, Tomcat.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed prototype applications using JSP, Servlets, Spring,
-                and Struts to showcase best practices.<br />
-                2. Built data persistence layers with Hibernate across
-                PostgreSQL, Oracle, and MySQL databases.<br />
-                3. Performed unit testing and debugging to ensure code quality
-                and compliance.<br />
-                4. Collaborated with senior developers to enhance architecture
-                and optimize performance.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Neev Tech - Mighty IFS</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>12/2011 – 04/2012</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                Java 6, Spring MVC, Hibernate, jQuery, Tomcat 6, PostgreSQL.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Responsibilities</strong>
-              <p>
-                1. Developed backend controllers, services, and data models
-                using Spring MVC and Hibernate.<br />
-                2. Created interactive UI components with jQuery to improve user
-                experience.<br />
-                3. Debugged and resolved issues to enhance stability and
-                performance.<br />
-                4. Worked collaboratively to ensure smooth frontend-backend
-                integration.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="project">
-          <h3>True Spark - Personal</h3>
-          <div class="project-meta">
-            <div class="project-meta-item">
-              <strong>Duration</strong>
-              <p>01/2026 – Present</p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Project Description</strong>
-              <p>
-                True Spark aims to become a creative social ecosystem where
-                technology, design, and AI come together to help users express
-                ideas, emotions, and stories effortlessly, while fostering
-                meaningful digital connections.
-              </p>
-            </div>
-            <div class="project-meta-item">
-              <strong>Tech Stack</strong>
-              <p>
-                React Native, Expo (Managed Workflow), TypeScript, Redux
-                Toolkit, React Redux, React Navigation (Stack & Bottom Tabs),
-                Expo Linear Gradient, Lucide React, React Native Reanimated,
-                Glassmorphism UI, Python, FastAPI, MongoDB, Motor (Async MongoDB
-                Driver), Google Gemini API, OpenAI (ChatGPT) API, Docker,
-                Railway
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="skills">
-        <h2><i class="fas fa-tools"></i> Technical Skills</h2>
-        <div class="skills-category">
-          <h3>Programming Languages</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Java 8, 11, 17</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Groovy</span>
-            <span class="skill-tag">Go Lang</span>
-            <span class="skill-tag">Node JS</span>
-          </div>
-        </div>
-        <div class="skills-category">
-          <h3>Frameworks & Libraries</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Spring Boot</span>
-            <span class="skill-tag">React JS</span>
-            <span class="skill-tag">React Native</span>
-            <span class="skill-tag">Angular</span>
-            <span class="skill-tag">FastAPI</span>
-            <span class="skill-tag">LangChain</span>
-            <span class="skill-tag">GraphQL</span>
-          </div>
-        </div>
-        <div class="skills-category">
-          <h3>AI/ML Technologies</h3>
-          <div class="skills-list">
-            <span class="skill-tag">RAG</span>
-            <span class="skill-tag">LangGraph</span>
-            <span class="skill-tag">BERT</span>
-            <span class="skill-tag">RoBERTa</span>
-            <span class="skill-tag">GPT/LLaMA</span>
-            <span class="skill-tag">Transformers</span>
-            <span class="skill-tag">PyTorch</span>
-          </div>
-        </div>
-        <div class="skills-category">
-          <h3>Microservices & Cloud</h3>
-          <div class="skills-list">
-            <span class="skill-tag">Netflix Eureka</span>
-            <span class="skill-tag">AWS (EC2, S3, Lambda, ECS)</span>
-            <span class="skill-tag">Docker</span>
-            <span class="skill-tag">Kubernetes</span>
-            <span class="skill-tag">Jenkins</span>
-          </div>
-        </div>
-        <div class="skills-category">
-          <h3>Databases</h3>
-          <div class="skills-list">
-            <span class="skill-tag">MongoDB</span>
-            <span class="skill-tag">MySQL</span>
-            <span class="skill-tag">PostgreSQL</span>
-            <span class="skill-tag">Oracle</span>
-          </div>
-        </div>
-      </section>
-      <section id="education">
-        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-        <div class="education-item">
-          <strong>Master's Degree (MCA) in Computers</strong>
-          <p>RGPV, Bhopal - 2010</p>
-        </div>
-        <div class="education-item">
-          <strong>Bachelor's Degree (BSc) in Mathematics</strong>
-          <p>Barkatullah Vishwavidyalaya, Bhopal - 2006</p>
-        </div>
-        <div class="education-item">
-          <strong>High Secondary Diploma</strong>
-          <p>Navankur Vidhyapeeth - 2003</p>
-        </div>
-      </section>
-      <section id="contact">
-        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <div class="contact-grid">
-          <div class="contact-item">
-            <i class="fab fa-linkedin"></i>
-            <a
-              href="https://www.linkedin.com/in/jeetsinghparmar/"
-              target="_blank"
-              >linkedin.com/in/jeetsinghparmar</a
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About & Education -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-num">04</span>
+      <h2 id="about-heading">Background</h2>
+      <div class="section-line" aria-hidden="true"></div>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <div style="display:flex;align-items:center;gap:20px;margin-bottom:32px;">
+          <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--teal));padding:2px;flex-shrink:0;">
+            <img
+              src="https://avatars.githubusercontent.com/u/4319980?s=400&u=b710a705fb9563877234c66aab203302f0d14961&v=4"
+              alt="Jeet Singh Parmar"
+              width="76" height="76"
+              style="width:76px;height:76px;border-radius:50%;object-fit:cover;display:block;border:2px solid var(--bg);"
+              loading="lazy"
             >
           </div>
-          <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/jeetparmar" target="_blank"
-              >github.com/jeetparmar</a
-            >
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:jeetparmar33@gmail.com">jeetparmar33@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Dubai, UAE</span>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+971504895503">+971-504895503</a>
-          </div>
-          <div class="contact-item">
-            <i class="fas fa-phone"></i>
-            <a href="tel:+971504895503">+91-9743684553</a>
+          <div>
+            <div style="font-family:'Playfair Display',serif;font-size:20px;font-weight:700;">Jeet Singh Parmar</div>
+            <div style="font-family:'DM Mono',monospace;font-size:11px;color:var(--text-muted);letter-spacing:0.08em;margin-top:4px;">Principal Full Stack &amp; AI Engineer</div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2025 Jeet Singh Parmar. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+        <div class="about-text">
+          <p>
+            A principal-level engineering leader who architects systems that endure. Over 14 years, I've moved across the full breadth of the stack — from Oracle-backed financial ERPs to production LLM pipelines, from AngularJS dashboards to multi-agent AI platforms.
+          </p>
+          <p>
+            My recent work at Vurse sits at the intersection of generative AI and scalable infrastructure — building systems that process real-time market signals, generate explainable AI insights, and maintain trust through guardrails and observability.
+          </p>
+          <p>
+            Outside engineering, I run a YouTube channel (@AlmightyJava) sharing technical knowledge with the developer community, and build personal projects that blend technology with meaningful impact.
+          </p>
+        </div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1">
+        <div class="edu-card" style="margin-bottom: 20px;">
+          <div class="edu-degree">Master of Computer Applications</div>
+          <div class="edu-school">Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)</div>
+          <div class="edu-year">2007 – 2010 · Indore, India</div>
+        </div>
+        <div style="padding: 20px 0;">
+          <div style="font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.15em; color:var(--gold); text-transform:uppercase; margin-bottom:16px;">Certifications</div>
+          <div class="cert-item">
+            <div class="cert-dot"></div>
+            <div>
+              <div class="cert-name">SCJP — Sun Certified Java Programmer</div>
+              <div class="cert-type">Oracle · Java Platform Certification</div>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 20px 0;">
+          <div style="font-family:'DM Mono',monospace; font-size:11px; letter-spacing:0.15em; color:var(--gold); text-transform:uppercase; margin-bottom:16px;">Languages</div>
+          <div class="cert-item">
+            <div class="cert-dot" style="background:var(--gold)"></div>
+            <div><div class="cert-name">English</div><div class="cert-type">Professional Proficiency</div></div>
+          </div>
+          <div class="cert-item" style="border-bottom:none;">
+            <div class="cert-dot" style="background:var(--gold)"></div>
+            <div><div class="cert-name">Hindi</div><div class="cert-type">Native</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-brand">Jeet Singh Parmar</div>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/jeetsinghparmar" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/jeetparmar" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://jeetparmar.github.io/" target="_blank" rel="noopener">Website</a>
+    <a href="https://www.youtube.com/@AlmightyJava" target="_blank" rel="noopener">YouTube</a>
+  </div>
+  <div class="footer-copy">Bangalore, India · Open to opportunities</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
 </html>
